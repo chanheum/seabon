@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diary_Fragment">
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="2022-10-21"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textview_note"
+        android:text="생각노트"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"/>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/date_text">
+
+        <Button
+            android:id="@+id/btn_diary"
+            android:text="일기"
+            android:background="#d0fd0a"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_note"
+            android:text="노트"
+            android:background="#f0d0ac"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/note_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="머리 속에 맴도는 잡념을 여기에 적어보세요.\n여기에 적음으로써 생각이 날아갈 거에요."
+        android:background="@null"
+        android:gravity="top"
+        android:scrollHorizontally="true"
+        android:layout_below="@id/textview_note"/>
+
+
+</RelativeLayout>
