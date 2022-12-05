@@ -1,0 +1,60 @@
+//apply plugin: 'com.android.application'
+//
+//android {
+//    compileSdk 27
+//    buildToolsVersion '30.0.2'
+//
+//    defaultConfig {
+//        applicationId "devs.mulham.raee.horizontalcalendarlibrary"
+//        minSdkVersion 14
+//        targetSdkVersion 27
+//        versionCode 1
+//        versionName "1.0"
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//}
+//
+//dependencies {
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation project(':horizontalcalendar')
+////    implementation 'com.android.support:appcompat-v7:26.1.0'
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
+//    implementation 'com.android.support:design:27.1.1'
+//    implementation 'com.android.support:support-v4:27.1.1'
+//    testImplementation 'junit:junit:4.12'
+//}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 26
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "devs.mulham.raee.horizontalcalendarlibrary"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':horizontalcalendar')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+}

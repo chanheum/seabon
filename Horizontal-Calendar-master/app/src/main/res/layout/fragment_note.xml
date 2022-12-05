@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Note_Fragment">
+
+    <ImageView
+        android:id="@+id/save_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_save_24"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/textview_note"
+        android:text="생각노트"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/note_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textview_note"
+        android:layout_marginTop="-1dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="머리 속에 맴도는 잡념을 여기에 적어보세요.\n여기에 적음으로써 생각이 날아갈 거에요."
+        android:scrollHorizontally="true" />
+
+</RelativeLayout>
